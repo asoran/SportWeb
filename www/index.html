@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fakebook</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+
+        <div id="site">
+            <div id="connexion">
+                <form method="POST" action="connexion.php">
+                    <table>
+                        <tr>
+                            <td><label for="login">Adresse e-mail ou mobile</td>
+                            <td><label for="password">Mot de passe</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input maxlength="20" title="aha" required type="text" name="login" placeholder="Votre login">
+                        </td>
+                            <td><input maxlength="20" required type="password" name="password" placeholder="Votre mot de passe">
+                            </td>
+                            <td><input type="submit" value="Connexion"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Information de compte oubliées ?</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div id="inscription">
+                <form method="POST" action="inscription.php">
+                    <h1>Inscription</h1>
+                    <h3>C'est gratuit (et ça le restera toujours)</h3>
+                    <input required type="text" name="prenom" placeholder="Prénom">
+                    <input required type="text" name="nom" placeholder="Nom de famille">
+                        <br/>
+                    <input required type="text" name="login" placeholder="Numéro de mobile ou email">
+                        <br/>
+                    <input required type="text" name="loginConfirm" placeholder="Confirmer numéro de mobile ou email">
+                        <br/>
+                    <input required type="password" name="password" placeholder="Nouveau mot de passe">
+
+
+                    <h4>Date de naissance</h4>
+                    <select required name="day" id="day">
+                        <option disabled value=-1>Jour</option>
+                    </select>
+                    <select required name="month" id="month">
+                        <option disabled value=-1>Mois</option>
+                    </select>
+                    <select required name="year" id="year">
+                        <option disabled value=-1>Année</option>
+                    </select>
+                        <br/>
+                        <br/>
+                    <input required type="radio" name="sexe" value="f">Femme
+                    <input required type="radio" name="sexe" value="h">Homme
+                        <br/>
+
+                    <div id="toa">
+                        <h6>En cliquant sur Créer un compte, vous acceptez nos
+                            <a href="https://www.facebook.com/legal/terms">Conditions</a>
+                            et indiquez que vous avez lu notre
+                            <a href="https://www.facebook.com/about/privacy">Politique d’utilisation
+                            des données</a>, y compris notre <a href="https://www.facebook.com/policies/cookies/">
+                            Utilisation des cookies</a>. Vous pourrez recevoir des notifications
+                            par texto de la part de Facebook et pouvez vous désabonner à tout moment.</h6>
+                    </div>
+
+                    <input onclick="" type="submit" value="Inscription">
+                </form>
+            </div>
+    </div>
+
+
+
+
+    </body>
+</html>

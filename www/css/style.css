@@ -1,0 +1,73 @@
+/*
+ * CSS Globale
+*/
+body{
+    margin: 0;
+    width: 550px;
+}
+
+form{
+    width: 90%;
+    padding-left: 5%;
+}
+
+/*
+ * Conteneur globaux
+*/
+#connexion{
+    background-color: rgb(60, 90, 150);
+    font-size: 12px;
+}
+
+#inscription{
+    margin-top: -20px;
+    background-color: rgba(222, 222, 222, 0.5);
+}
+
+/*
+ * CSS du form connexion
+*/
+#connexion form {
+    color: white;
+}
+
+#connexion table td{
+    width: 30%;
+}
+
+#connexion form input[type="submit"]{
+    width: 100%;
+    /height: 30px;
+    font-size: 14px;
+    background-color: rgb(60, 90, 150);
+    color: white;
+}
+
+/*
+ * CSS du form inscription
+*/
+#inscription form input:not([type="radio"]){
+    width: 100%;
+    height: 25px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+#inscription form input[name="prenom"], #inscription form input[name="nom"]{
+    width: 48%;
+}
+
+#inscription form input[type="submit"]{
+    width: 50%;
+    height: 40px;
+    font-size: 14px;
+    background-color: rgb(100, 150, 80);
+    color: white;
+}
+
+/*
+ * CSS du toa (Terms Of Agreements)
+*/
+#toa{
+    width: 70%;
+}
